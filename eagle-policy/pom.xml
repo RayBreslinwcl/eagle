@@ -75,15 +75,39 @@
                     <groupId>org.slf4j</groupId>
                     <artifactId>slf4j-simple</artifactId>
                 </exclusion>
+                <exclusion>
+                    <groupId>org.quartz-scheduler.wso2</groupId>
+                    <artifactId>quartz</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.wso2.orbit.com.lmax</groupId>
+                    <artifactId>disruptor</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.eclipse.osgi</groupId>
+                    <artifactId>org.eclipse.osgi.services</artifactId>
+                </exclusion>
             </exclusions>
         </dependency>
         <dependency>
             <groupId>org.wso2.siddhi</groupId>
             <artifactId>siddhi-query-api</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.log4j.wso2</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.wso2.siddhi</groupId>
             <artifactId>siddhi-query-compiler</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.log4j.wso2</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.wso2.siddhi</groupId>
@@ -92,6 +116,13 @@
         <dependency>
             <groupId>org.wso2.extension.siddhi.execution.time</groupId>
             <artifactId>siddhi-execution-time</artifactId>
+            <version>4.0.6</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.log4j.wso2</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.wso2.extension.siddhi.execution.string</groupId>
@@ -104,6 +135,13 @@
         <dependency>
             <groupId>org.wso2.extension.siddhi.execution.regex</groupId>
             <artifactId>siddhi-execution-regex</artifactId>
+            <version>4.0.6</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.log4j.wso2</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!--jackson-->
         <dependency>

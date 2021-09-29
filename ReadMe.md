@@ -6,6 +6,8 @@ Real time data processing system based on flink and CEP(drools/siddhi)
 ### Design:
 ![design](https://github.com/luxiaoxun/eagle/blob/master/picture/eagle-design.png)
 
+![img](https://img2020.cnblogs.com/blog/434101/202007/434101-20200727092000146-556659768.png)
+
 ### Modules:
 * eagle-api：基于springboot，提供drools规则引擎的读写服务。
 * eagle-common：通用类模块。
